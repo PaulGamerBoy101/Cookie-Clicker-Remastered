@@ -10,7 +10,7 @@
 <body>
     <div id="credits">
         <span>
-            <b>Cookie Clicker Remastered</b> &copy; <a href="http://orteil.dashnet.org">⚙ ᕼᗅᑕKΞRƵ101 ⚙</a>, 2026
+            <b>Cookie Clicker Remastered</b> &copy; <a href="http://orteil.dashnet.org" target="_blank">⚙ ᕼᗅᑕKΞRƵ101 ⚙</a>, 2026
         </span>
     </div>
 
@@ -25,6 +25,7 @@
             <div id="cookie-wrapper">
                 <div id="cookie" onmouseup="ClickCookie();"></div>
             </div>
+            <!-- Popups will be rendered here -->
             <div id="pops"></div>
         </section>
 
@@ -44,8 +45,8 @@
         <!-- Right Section: Store & Menu -->
         <section class="panel" id="right-panel">
             <div id="saveMenu">
-                <button class="btn" onclick="exportSave();">Export</button>
-                <button class="btn" onclick="importSave();">Import</button>
+                <button class="btn" onclick="ExportSave();">Export</button>
+                <button class="btn" onclick="ImportSave();">Import</button>
                 <button class="btn" onclick="Reset();">Reset</button>
                 <button class="btn" id="toggleNumbers" onclick="ToggleNumbers();">Numbers On</button>
                 <div id="version"></div>
@@ -56,11 +57,10 @@
 
     <div id="updateLog">
         <b>Update Log</b><br>
-        Modernized refactor using Flexbox and ES6 structures.
+        v.0.126 Logic: Price scaling at 115%, accurate 2013 CPS rates.
     </div>
 
     <div id="hiddenLoader" style="display:none;"></div>
-    
     <script src="script.js"></script>
 </body>
 </html>
