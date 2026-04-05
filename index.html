@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker | 2013 Modernized</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+    <div id="credits">
+        <span>
+            <b>Cookie Clicker</b> &copy; <a href="http://orteil.dashnet.org">Orteil</a>, 2013 
+            | Modernized Version
+        </span>
+    </div>
+
+    <main id="game-container">
+        <!-- Left Section: The Cookie -->
+        <section class="panel" id="left-panel">
+            <div id="money-container">
+                <div id="money">0</div>
+                <div id="cps">cookies/second: 0</div>
+            </div>
+            <div id="comment">Loading...</div>
+            <div id="cookie-wrapper">
+                <div id="cookie" onmouseup="ClickCookie();"></div>
+            </div>
+            <div id="pops"></div>
+        </section>
+
+        <!-- Middle Section: Visual Buildings -->
+        <section class="panel" id="middle-panel">
+            <div id="building-visuals">
+                <div id="grandmas"></div>
+                <div id="factories"></div>
+                <div id="mines"></div>
+                <div id="shipments"></div>
+                <div id="labs"></div>
+                <div id="portals"></div>
+                <div id="times"></div>
+            </div>
+        </section>
+
+        <!-- Right Section: Store & Menu -->
+        <section class="panel" id="right-panel">
+            <div id="saveMenu">
+                <button class="btn" onclick="exportSave();">Export</button>
+                <button class="btn" onclick="importSave();">Import</button>
+                <button class="btn" onclick="Reset();">Reset</button>
+                <button class="btn" id="toggleNumbers" onclick="ToggleNumbers();">Numbers On</button>
+                <div id="version"></div>
+            </div>
+            <div id="store"></div>
+        </section>
+    </main>
+
+    <div id="updateLog">
+        <b>Update Log</b><br>
+        Modernized refactor using Flexbox and ES6 structures.
+    </div>
+
+    <div id="hiddenLoader" style="display:none;"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
