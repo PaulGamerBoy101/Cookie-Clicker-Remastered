@@ -234,7 +234,7 @@ button2:active {
 /* Upgrades (button3) - Kept 100px Width */
 button3 {
     display: inline-block;
-    width: 100px;
+    width: auto;
     height: 30px;
     line-height: 20px;
     padding: 0;
