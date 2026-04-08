@@ -8,59 +8,80 @@
     <link rel="shortcut icon" href="favicon.png" />
 </head>
 <body>
-    <div id="credits">
-        <span>
-            <b>Cookie Clicker Remastered</b> &copy; <a href="http://orteil.dashnet.org" target="_blank">⚙ ᕼᗅᑕKΞRƵ101 ⚙</a>, 2026
-        </span>
-    </div>
 
-    <main id="game-container">
-        <!-- Left Section: The Cookie -->
-        <section class="panel" id="left-panel">
-            <div id="money-container">
-                <div id="money">0</div>
-                <div id="cps">cookies/second: 0</div>
-            </div>
-            <div id="comment">Loading...</div>
-            <div id="cookie-wrapper">
-                <div id="cookie" onmouseup="ClickCookie();"></div>
-            </div>
-            <!-- Popups will be rendered here -->
-            <div id="pops"></div>
-        </section>
+    <header id="main-header">
+        <HP><b><a href="http://pauglamerboy101.netlify.app" target="_blank">⚙ ᕼᗅᑕKΞRƵ101 ⚙</b></a></HP>
+        <CR><b>Cookie Clicker Remastered</b> &copy; ⚙ ᕼᗅᑕKΞRƵ101 ⚙, 2026 </CR>
+        | <SL><b>Reddit</b></SL> | <SAVE><b>Save Game</b></SAVE> | <EXPORT><b>Export Game</b></EXPORT> | <IMPORT><b>Import Game</b></IMPORT> | <RESET><b>Reset Game</b></RESET>
+    </header>
 
-        <!-- Middle Section: Visual Buildings -->
-        <section class="panel" id="middle-panel">
-            <div id="building-visuals">
-                <div id="grandmas"></div>
-                <div id="factories"></div>
-                <div id="mines"></div>
-                <div id="shipments"></div>
-                <div id="labs"></div>
-                <div id="portals"></div>
-                <div id="times"></div>
-            </div>
-        </section>
-
-        <!-- Right Section: Store & Menu -->
-        <section class="panel" id="right-panel">
-            <div id="saveMenu">
-                <button class="btn" onclick="ExportSave();">Export</button>
-                <button class="btn" onclick="ImportSave();">Import</button>
-                <button class="btn" onclick="Reset();">Reset</button>
-                <button class="btn" id="toggleNumbers" onclick="ToggleNumbers();">Numbers On</button>
-                <div id="version"></div>
-            </div>
-            <div id="store"></div>
-        </section>
-    </main>
-
-    <div id="updateLog">
-        <b>Update Log</b><br>
-        v.0.126 Logic: Price scaling at 115%, accurate 2013 CPS rates.
-    </div>
-
-    <div id="hiddenLoader" style="display:none;"></div>
+    <game>
+        <right>
+            <CI>
+            <gh1>Cookies:<CC>0</CC></gh1>
+            <gh2>Cookies Per Second:<CPS>0</CPS></gh2>
+            </CI>
+            <button id="big-cookie">
+            <img src="BigCookie.png" style="width:200px; hight:200px">
+            </button>
+        </right>
+        <left>
+        <store>
+        <sh1>Store</sh1>
+        <upgrades>
+        <sh2>Upgrades<sh2>
+        <button3>
+        <img src="IndexFingerUpgrade.png" style="width:25px; height:25px">Reinforced Index Finger | Price:<Price>100</Price>
+        </button3>
+        <br><br>
+        <button3>
+        <img src="PinkIndexFingerUpgrade.png" style="width:25px; height:25px">Carpal Tunnel Prevention Cream| Price:<Price>500</Price>
+        </button3>
+        <br></br>
+        <button3>
+        <img src="RollingPinUpgrade.png" style="width:25px; height:25px">Forwards From Grandma | Price:<Price>0</Price>
+        </button3>
+        <br></br>
+        </uprgades>
+        <buildings>
+        <sh2>Buildings<sh2>
+        <button2>
+        <img src="Clicker.png" style="width:25px; height:25px">Clicker | <BC>0</BC> | Price:<Price>0</Price>
+        </button2>
+        <br></br>
+        <button2>
+        <img src="Grandma.png" style="width:25px; height:25px">Grandma | <BC>0</BC>  | Price:<Price>0</Price>
+        </button2>
+        <br></br>
+        <button2>
+        <img src="Oven.png" style="width:25px; height:25px">Oven | <BC>0</BC>  | Price:<Price>0</Price>
+        </button2>
+        <br></br>
+        <button2>
+        <img src="Kitchen.png" style="width:36px; height:25px">Kitchen | <BC>0</BC> | Price:<Price>0</Price>
+        </button2>
+        <br></br>
+        <button2>
+        <img src="Farm.png" style="width:37px; height:25px">Farm | <BC>0</BC> | Price:<Price>0</Price>
+        </button2>
+        <br></br>
+        <button2>
+        <img src="Factory.png" style="width:15px; height:25px">Factory | <BC>0</BC> | Price:<Price>0</Price>
+        </button2>
+        <br></br>
+        <button2>
+        <img src="Mine.png" style="width:25px; height:25px">Mine | <BC>0</BC> | Price:<Price>0</Price>
+        </button2>
+        <br></br>
+        <button2>
+        <img src="Bank.png" style="width:25px; height:25px">Bank | <BC>0</BC> | Price:<Price>0</Price>
+        </button2>
+        <br></br>
+        </buildings>
+        </store>
+        </left>
+    </game>
     <script src="script.js"></script>
+
 </body>
 </html>
