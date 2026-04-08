@@ -2,7 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-image:url('BlueStripes.png');
+    background-image:url('Assets/BlueStripes.png');
 }
 
 #main-header {
@@ -117,7 +117,7 @@ left, right {
 right {
     height:100%;
     text-align: center;
-    background-image:url('CookieRain.gif');
+    background-image:url('Assets/CookieRain.gif');
     background-size:cover;
 }
 
